@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coffee Com</title>
+</head>
+<body>
+    
+    <div id="toggleMenu" onclick="toggleMenu()"></div>
+    <input type=" text" class="searchBar" placeholder="  Search">
+    <div class="buttonCart"><button onclick = "window.location.href='/cart.html';" class="btnCart">Cart</button></div>
+    <img class="searchIcon" src="searchicon.png" alt="searchicon">
+    <img src="322427_cart_icon.png" alt="" class="cart">
+    <div class="mainPageText">
+        <h1>Buy Coffee And Tea and Start Your <br>
+            Day With Great Freshness!!!</h1>
+        <h3>Coffee drinkers can raise a mug to fiber, <br> microbiome health and lowering risk <br> for cancer and diabetes. But tea drinkers, <br> do not despair. Tea is undoubtedly good for your blood pressure, <br> cholesterol, stress levels, mental health and productivity. <br> And both drinks are winners when it <br> comes to heart health and longevity.</h3>   
+    </div>
+    <div> <button onclick = "window.location.href='/menu.html';" class="buyBtn">Buy Now</button></div>    
+     <nav id="leftNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            
+            <li><a href="review.html">Review</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <img onclick = "window.location.href='/index.html';" src="coffeshop.jpg" alt="coffeshop" class="logo">
+        </ul>
+    </nav>
+    
+    <script>
+		var toggleStatus = 1;
+		function toggleMenu() {
+			if (toggleStatus == 1) {
+				document.getElementById("leftNav").style.display  = "none";
+               toggleStatus = 0;
+			} else if (toggleStatus == 0) {
+				document.getElementById("leftNav").style.display = "block"; 
+				toggleStatus = 1;
+
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="toggleMenu" onclick="toggleMenu()"></div>
+    <div class="coffeeMenu">
+      <h1>Coffee Menu</h1>
+      <div class="card">
+        <h1>Stumptown Coffee $55</h1>
+        <button class="stumpBuy">Buy Now</button>
+        <button class="stumpCart" onclick="showAlert()">Add to Cart</button>
+      </div>
+      <div class="card2">
+        <h1>Blue Takoi Coffee $6</h1>
+        <button class ="takoiBuy">Buy Now</button>
+        <button class="takoiCart" onclick="showAlert()">Add to Cart</button>
+      </div>
+      <div class="card3">
+        <h1>Country Bean Coffee $7</h1>
+        <button class="beanBuy">Buy Now</button>
+        <button class="beanCart" onclick="showAlert()">Add to Cart</button>
+      </div>
+      <img src="cofffeee main 1.webp" alt="af" />
+      <img class="card2img" src="cofffee main 2.webp" alt="fa" />
+      <img src="cofffeee main 3.webp" alt="card3" class="card3img" />
+    </div>
+    <div class="teaMenu1">
+      <h1>Tea Menu</h1>
+      <div class="teaCard">
+        <h1>Society Tea $10</h1>
+        <button class="societyBuy">Buy Now</button>
+        <button class="societyCart" onclick="showAlert()">Add to Cart</button>
+        <img src="tea main 1.webp" alt="tea" />
+        <div class="teaCard2">
+          <h1>Lipton Tea $10</h1>
+          <button class="liptonBuy">Buy Now</button>
+          <button class="liptonCart" onclick="showAlert()">Add to Cart</button>
+          <img src="tea main 2.webp" alt="Tea" />
+        </div>
+      </div>
+    </div>
+    <nav id="leftNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        
+        <li><a href="review.html">Review</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <img onclick = "window.location.href='/index.html';" src="coffeshop.jpg" alt="coffeshop" class="logo">
+      </ul>
+    </nav>
+
+    <script>
+     var toggleStatus = 1;
+		function toggleMenu() {
+			if (toggleStatus == 1) {
+				document.getElementById("leftNav").style.display = "none";
+				toggleStatus = 0;
+			} else if (toggleStatus == 0) {
+				document.getElementById("leftNav").style.display = "block"; 
+				toggleStatus = 1;
+
+			}
+		}
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
+ 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cartStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cartCard"> <h1>Your Cart is Empty! Add Products to Your Cart</h1>
+    <button id="checkout">CheckOut</button></div>
+    <div id="toggleMenu" onclick="toggleMenu()"></div>
+    <nav id="leftNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            
+            <li><a href="review.html">Review</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <img onclick = "window.location.href='/index.html';" src="coffeshop.jpg" alt="coffeshop" class="logo">
+        </ul>
+    </nav>
+    
+    <script>
+		var toggleStatus = 1;
+		function toggleMenu() {
+			if (toggleStatus == 1) {
+				document.getElementById("leftNav").style.display  = "none";
+               toggleStatus = 0;
+			} else if (toggleStatus == 0) {
+				document.getElementById("leftNav").style.display = "block"; 
+				toggleStatus = 1;
+
+			}
+		}
+	</script>
+    
+</body>
+</html>

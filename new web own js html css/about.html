@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="toggleMenu" onclick="toggleMenu()"></div>
+    <div class="aboutMe">
+        <h1>About Us</h1>
+        <p>We sell the best and branded Coffee <br>
+        and Tea, Its the best available,freash <br>
+        and health beverage in the market , We <br>
+        generally sell our products in india but <br>
+        we can export our products to other countries too.<br>
+        You can Learn About US in this page more!! Right Side!
+    </p>
+    <button id="learnMore" onclick="toggleRightnav()">Learn More</button>
+    </div>
+    <nav class="rightNav">
+        <ul>
+            <li class="rightNavli"><a href="aboutlinks/Address.html">Address</a></li>
+            <li class="rightNavli"><a href="aboutlinks/contacts.html">Contacts</a></li>
+            <li class="rightNavli"><a href="aboutlinks/orderpolicy.html">Order Policy</a></li>
+            <li class="rightNavli"><a href="/contactus.html">Enquaries</a></li>
+            <li class="rightNavli"><a href="aboutlinks/trackorders.html">Track Orders</a></li>
+        </ul>
+    </nav>
+    <nav id="leftNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            
+            <li><a href="review.html">Review</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <img onclick = "window.location.href='/index.html';" src="coffeshop.jpg" alt="coffeshop" class="logo">
+        </ul>
+    </nav>
+   <script>
+       var toggleStatus = 1;
+		function toggleMenu() {
+			if (toggleStatus == 1) {
+				document.getElementById("leftNav").style.display = "none";
+				toggleStatus = 0;
+			} else if (toggleStatus == 0) {
+				document.getElementById("leftNav").style.display = "block"; 
+				toggleStatus = 1;
+
+			}
+		}
+		var toggleStatus = 1;
+		function toggleRightnav() {
+			if (toggleStatus == 1) {
+				document.getElementsByClassName("rightNav")[0].style.display = "block";
+                document.getElementById("learnMore").innerText = "Hide NavBar";
+                toggleStatus = 0;
+			} else if (toggleStatus == 0) {
+				document.getElementsByClassName("rightNav")[0].style.display = "none"; 
+                document.getElementById("learnMore").innerText = "Learn More";
+				toggleStatus = 1;
+
+			}
+        
+		}
+        
+	</script>
+
+</body>
+</html>

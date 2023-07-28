@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>COoffee Com</title>
+</head>
+<body>
+    <nav id="leftNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            
+            <li><a href="review.html">Review</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <img onclick = "window.location.href='/index.html';" src="coffeshop.jpg" alt="coffeshop" class="logo">
+        </ul>
+    </nav>
+    <!DOCTYPE html>
+    <!-- Created By CodingLab - www.codinglabweb.com -->
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="UTF-8">
+       <!-- <title> Responsive Contact Us Form  | CodingLab </title>-->
+        <link rel="stylesheet" href="style.css">
+        <!-- Fontawesome CDN Link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       </head>
+    <body>
+      <div id="toggleMenu" onclick="toggleMenu()"></div>
+      <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">Uttarakhand , NH9</div>
+              <div class="text-two">Lohaghat 01</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+91 94823 03232</div>
+              <div class="text-two">+91 99487 27941</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">code1234@gmail.com</div>
+              <div class="text-two">codegame1234@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+            <p>If you have any work from me or any types of quries related to my website, you can send me message from here. It's my pleasure to help you.</p>
+          <form action="#">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your @ email">
+            </div>
+            <div class="input-box message-box">
+              
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now" >
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
+    </body>
+    </html>
+    
+    <script>
+      var toggleStatus = 1;
+      function toggleMenu() {
+        if (toggleStatus == 1) {
+          document.getElementById("leftNav").style.display = "none";
+          toggleStatus = 0;
+        } else if (toggleStatus == 0) {
+          document.getElementById("leftNav").style.display = "block"; 
+          toggleStatus = 1;
+  
+        }
+      }
+    </script>
+</body>
+</html>
